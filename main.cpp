@@ -18,7 +18,7 @@ using namespace std;
 
 
 int main (){
-ifstream ler;
+
 char   alvo,
        cod1[]={'a','d','g','j','m','p','t','w'},
        cod2[]={'b','e','h','k','n','q','u','x'},
@@ -61,11 +61,4 @@ for(int i=0; i<strlen(palavra); i++)
     cout << cod5[tecla]<<apertar<<endl;
     
   }
-
- 
-  /*
-  cout << "Deseja consultar mais uma palavra? 1-SIM ou 2-NÃO\n";
-  cin>>escolha;
-  if(escolha==1)
-  */
 }
