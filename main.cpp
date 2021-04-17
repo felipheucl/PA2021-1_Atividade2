@@ -26,12 +26,17 @@ char   alvo,
        cod4[]={' ',' ',' ',' ',' ','s',' ','z'};
 string cod5[]={"#2=","#3=","#4=","#5=","#6=","#7=","#8=","#9="};
 char palavra[50];
-int apertar=0,tecla=0,ind=0;
+int apertar=0,tecla=0, q1=1;
+
 
 
 cout << "********************************************" << endl<< endl;
 cout << "ATIVIDADE 2 - Problema da escrita no celular" << endl<< endl;
+
+while (q1==1)
+{
 cout << "Digite uma palavra: (maximo de 50 caracteres) " << endl<< endl;
+
 cin.getline(palavra,50);
 
 cout << "Segue a codificacao para: " << palavra << endl<< endl;
@@ -44,7 +49,7 @@ for(int i=0; i<strlen(palavra); i++)
 for(int i=0; i<strlen(palavra); i++)
   {
     alvo=palavra[i];
-    for(ind=0; ind<=7; ind++)
+    for(int ind=0; ind<=7; ind++)
     {   
         if (alvo==cod1[ind])
             {apertar=1;
@@ -65,6 +70,12 @@ for(int i=0; i<strlen(palavra); i++)
     }
     
     cout << cod5[tecla]<<apertar<<endl;
-    
+   
   }
+   
+   cout << "*************************************"<<endl<<endl;
+   cout << "Para Continuar, Pressione a tecla '1' [Enter] ou '0' [Enter] para terminar." <<endl<<endl;
+   cin >> q1;
+   cin.ignore();
+}
 }
