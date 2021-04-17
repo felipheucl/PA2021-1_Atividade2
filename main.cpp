@@ -33,7 +33,13 @@ cout << "********************************************" << endl<< endl;
 cout << "ATIVIDADE 2 - Problema da escrita no celular" << endl<< endl;
 cout << "Digite uma palavra: (maximo de 50 caracteres) " << endl<< endl;
 cin.getline(palavra,50);
+
 cout << "Segue a codificacao para: " << palavra << endl<< endl;
+
+for(int i=0; i<strlen(palavra); i++)
+  {
+    palavra[i]=tolower (palavra[i]);
+  }
  
 for(int i=0; i<strlen(palavra); i++)
   {
